@@ -15,8 +15,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-public class SampleActivity
-        extends FragmentActivity {
+public class SampleActivity extends FragmentActivity {
+    private static final String TAG1 = SampleActivity.class.getSimpleName();
     private static final int[] resource = new int[]{R.drawable.welcome1, R.drawable.welcome4,
             R.drawable.welcome3, R.drawable.welcome4};
     private static final String TAG = SampleActivity.class.getSimpleName();
