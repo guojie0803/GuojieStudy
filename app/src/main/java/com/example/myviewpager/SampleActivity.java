@@ -2,6 +2,7 @@ package com.example.myviewpager;
 
 
 import android.annotation.SuppressLint;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,6 +20,7 @@ public class SampleActivity extends FragmentActivity {
     private static final String TAG1 = SampleActivity.class.getSimpleName();
     private static final String TAG3 = SampleActivity.class.getSimpleName();
     private static final String TAG2 = SampleActivity.class.getSimpleName();
+    private static final String TAG4= SampleActivity.class.getSimpleName();
     private static final int[] resource = new int[]{R.drawable.welcome1, R.drawable.welcome4,
             R.drawable.welcome3, R.drawable.welcome4};
     private static final String TAG = SampleActivity.class.getSimpleName();
@@ -31,6 +33,7 @@ public class SampleActivity extends FragmentActivity {
         ColorAnimationView colorAnimationView = (ColorAnimationView) findViewById(R.id.ColorAnimationView);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(adpter);
+        Log.d(TAG4,"GGGG");
         /**
          *  首先，你必须在 设置 Viewpager的 adapter 之后在调用这个方法
          *  第二点，setmViewPager(ViewPager mViewPager,Object obj, int count, int... colors)
